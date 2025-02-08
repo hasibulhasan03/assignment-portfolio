@@ -9,7 +9,7 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        axios.get('https://assignment-portfolio-five.vercel.app/api/blogs')
+        axios.get('https://assignment-portf-git-acbbf0-md-hasibul-hasans-projects-ee70a7f0.vercel.app/api/blogs')
             .then(res => setBlogs(res.data))
             .catch(err => console.error(err));
     }, []);

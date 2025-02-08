@@ -8,7 +8,7 @@ const Service = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        axios.get('https://assignment-portfolio-five.vercel.app/api/services')
+        axios.get('https://assignment-portf-git-acbbf0-md-hasibul-hasans-projects-ee70a7f0.vercel.app/api/services')
             .then(res => setServices(res.data))
             .catch(err => console.error(err));
     }, []);
