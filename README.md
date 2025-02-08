@@ -23,9 +23,6 @@ The project features:
 
 ## Dashboard Access
 
-- **Dashboard Login Route:**  
-  `https://assignment-portf-git-acbbf0-md-hasibul-hasans-projects-ee70a7f0.vercel.app/api/auth/login`
-
 - **Dashboard Credentials:**
   - **Email:** `hasib@ostad.com`
   - **Password:** `hasib1234`
