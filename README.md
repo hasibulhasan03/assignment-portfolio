@@ -27,7 +27,7 @@ The project features:
   - **Email:** `hasib@ostad.com`
   - **Password:** `hasib1234`
 
-Use these credentials to log in to the dashboard. After a successful login, you will receive a JWT token along with your user details (including your username) that are used to access protected dashboard pages.
+Use these credentials to log in to the dashboard.
 
 ---
 
