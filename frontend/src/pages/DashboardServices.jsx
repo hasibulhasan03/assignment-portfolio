@@ -6,7 +6,7 @@ const DashboardServices = ({ token }) => {
     const [form, setForm] = useState({ title: '', description: '', image: '' });
     const [editingId, setEditingId] = useState(null);
 
-    const baseURL = 'http://localhost:5000';
+    const baseURL = 'https://assignment-portfolio-five.vercel.app';
 
     const fetchServices = async () => {
         try {

@@ -8,7 +8,7 @@ const DashboardProjects = ({ token }) => {
 
     const fetchProjects = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/projects');
+            const res = await axios.get('https://assignment-portfolio-five.vercel.app/api/projects');
             setProjects(res.data);
         } catch (err) {
             console.error(err);
@@ -23,12 +23,12 @@ const DashboardProjects = ({ token }) => {
         e.preventDefault();
         try {
             if (editingId) {
-                await axios.put(`http://localhost:5000/api/projects/${editingId}`, form, {
+                await axios.put(`https://assignment-portfolio-five.vercel.app/api/projects/${editingId}`, form, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setEditingId(null);
             } else {
-                await axios.post('http://localhost:5000/api/projects', form, {
+                await axios.post('https://assignment-portfolio-five.vercel.app/api/projects', form, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
             }
@@ -46,7 +46,7 @@ const DashboardProjects = ({ token }) => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/projects/${id}`, {
+            await axios.delete(`https://assignment-portfolio-five.vercel.app/api/projects/${id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             fetchProjects();

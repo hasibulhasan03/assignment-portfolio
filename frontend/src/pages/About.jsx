@@ -9,7 +9,7 @@ const About = () => {
     const [team, setTeam] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/team')
+        axios.get('https://assignment-portfolio-five.vercel.app/api/team')
             .then(res => setTeam(res.data))
             .catch(err => console.error(err));
     }, []);

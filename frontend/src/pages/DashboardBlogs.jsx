@@ -6,7 +6,7 @@ const DashboardBlogs = ({ token }) => {
     const [form, setForm] = useState({ title: '', content: '', image: '' });
     const [editingId, setEditingId] = useState(null);
 
-    const baseURL = 'http://localhost:5000';
+    const baseURL = 'https://assignment-portfolio-five.vercel.app';
 
     const fetchBlogs = async () => {
         try {

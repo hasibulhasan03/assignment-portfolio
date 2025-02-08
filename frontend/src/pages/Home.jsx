@@ -15,8 +15,8 @@ const Home = () => {
         const fetchData = async () => {
             try {
                 const [projectsRes, blogsRes] = await Promise.all([
-                    axios.get('http://localhost:5000/api/projects'),
-                    axios.get('http://localhost:5000/api/blogs')
+                    axios.get('https://assignment-portfolio-five.vercel.app/api/projects'),
+                    axios.get('https://assignment-portfolio-five.vercel.app/api/blogs')
                 ]);
 
                 setProjects(projectsRes.data);

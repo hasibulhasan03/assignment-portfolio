@@ -6,7 +6,7 @@ const DashboardTeam = ({ token }) => {
     const [form, setForm] = useState({ name: '', role: '', image: '' });
     const [editingId, setEditingId] = useState(null);
 
-    const baseURL = 'http://localhost:5000';
+    const baseURL = 'https://assignment-portfolio-five.vercel.app';
 
     const fetchTeam = async () => {
         try {
