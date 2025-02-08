@@ -61,3 +61,18 @@ body {
         padding: 1rem 3rem;
     }
 }
+
+@media screen and (max-width: 800px) { 
+    .img-container {
+        height: 250px !important;
+        width: 250px !important;
+    }
+
+    .left h1 {
+        font-size: 1.6rem;
+    }
+
+    .left h2 {
+        font-size: 1.6rem;
+    }
+}
