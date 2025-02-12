@@ -1,11 +1,10 @@
-// backend/models/Project.js
 const mongoose = require('mongoose');
 
 const ProjectSchema = new mongoose.Schema({
     title: { type: String, required: true },
     description: { type: String },
-    image: { type: String }, // URL to project image
-    link: { type: String }, // optional project link
+    image: { type: String },
+    link: { type: String },
     createdAt: { type: Date, default: Date.now },
 });
 

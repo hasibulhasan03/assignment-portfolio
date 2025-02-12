@@ -1,11 +1,9 @@
-// backend/routes/auth.js
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-// Register (optional; you may pre-create an admin user)
 router.post('/register', async (req, res) => {
     const { username, email, password } = req.body;
     try {

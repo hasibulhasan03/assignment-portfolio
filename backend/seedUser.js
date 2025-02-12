@@ -1,4 +1,3 @@
-// backend/seedUser.js
 require('dotenv').config();
 const mongoose = require('mongoose');
 const User = require('./models/User');
@@ -13,7 +12,7 @@ mongoose
         const newUser = new User({
             username: 'hasib09',
             email: 'hasib@ostad.com',
-            password: 'hasib1234',  // This will be hashed automatically
+            password: 'hasib1234',
         });
         return newUser.save();
     })
